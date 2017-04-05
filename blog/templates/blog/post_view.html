@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+	<h1>{{ post.title }}</h1>
+	<p>{{ post.text|linebreaks }}</p>
+	<p>{{ post.create_date }}</p>
+	<a href="{% url 'post_list' %}">Назад</a>
+
+{% endblock content %}
